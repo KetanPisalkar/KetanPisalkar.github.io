@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketan Nitin Pisalkar - Data Scientist Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Data Scientist specializing in AI/ML & NLP | PyTorch, TensorFlow, Scikit-learn | Built LLaMA 3.3B Model with 15% Accuracy Improvement">
+    <meta name="keywords" content="Data Scientist, Machine Learning Engineer, AI Engineer, Python, ML, NLP, LLMs, Data Science Portfolio, Ketan Pisalkar">
+    <meta name="author" content="Ketan Nitin Pisalkar">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Ketan Nitin Pisalkar - Data Scientist Portfolio">
+    <meta property="og:description" content="Fine-tuned LLaMA 3.3B | Building Production ML Systems | Cybersecurity & Traffic Analytics">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Live Data Visualization Background -->
+    <canvas id="dataCanvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">📊</span>
+                <span class="logo-text">DataSci<span class="logo-accent">Pro</span></span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">🚀</span>
+                <span>Available for Opportunities</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="greeting">Hi, I'm</span>
+                <span class="hero-name">Ketan Nitin Pisalkar</span>
+                <span class="hero-subtitle">Data Scientist & ML Engineer</span>
+            </h1>
+            
+            <p class="hero-description">
+                Transforming complex data into actionable insights through machine learning.
+                Fine-tuned LLaMA 3.3B model achieving <span class="highlight">15% accuracy improvement</span>.
+                Building production-ready ML systems that solve real-world problems in cybersecurity and traffic analytics.
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">ML Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Model Accuracy</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+            </div>
+            
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            
+            <div class="hero-social">
+                <a href="https://github.com/KetanPisalkar" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ketan-pisalkar-81b495259" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:pisalkarn69@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="visual-container">
+                <div class="profile-image">
+                    <!-- Replace with your actual photo -->
+                    <img src="https://via.placeholder.com/400x400/6366f1/ffffff?text=Ketan+Pisalkar" alt="Ketan Nitin Pisalkar">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring ring-2"></div>
+                </div>
+                
+                <div class="floating-card card-1">
+                    <i class="fas fa-brain"></i>
+                    <span>Machine Learning</span>
+                </div>
+                
+                <div class="floating-card card-2">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Data Analysis</span>
+                </div>
+                
+                <div class="floating-card card-3">
+                    <i class="fas fa-code"></i>
+                    <span>Python Expert</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-heading">Passionate About AI/ML & Data-Driven Solutions</h3>
+                    <p>
+                        I'm a final-year Data Science student at J D College of Engineering & Management with hands-on experience 
+                        in AI/ML model development. My journey includes fine-tuning LLaMA 3.3B models at Remo Start, where I achieved 
+                        a <strong>15% improvement in domain-specific query accuracy</strong>, and curating <strong>50,000+ legal documents</strong> 
+                        at PocketLawyers for ML training.
+                    </p>
+                    <p>
+                        I specialize in Natural Language Processing, Large Language Models, and building end-to-end machine learning pipelines. 
+                        My work spans from data collection and preprocessing to model deployment—handling <strong>100,000+ data points</strong> 
+                        and serving production systems with <strong>99.5% uptime</strong>.
+                    </p>
+                    <p>
+                        What drives me is solving real-world problems through data science—from detecting malicious URLs with 95% accuracy 
+                        to analyzing traffic accident patterns. I don't just build models; I build solutions that create measurable business impact.
+                    </p>
+                    
+                    <div class="expertise-grid">
+                        <div class="expertise-item">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <h4>NLP & LLMs</h4>
+                                <p>Fine-tuning transformers & building domain-specific AI</p>
+                            </div>
+                        </div>
+                        
+                        <div class="expertise-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Cybersecurity ML</h4>
+                                <p>Malicious URL detection with 95% accuracy</p>
+                            </div>
+                        </div>
+                        
+                        <div class="expertise-item">
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <h4>Data Engineering</h4>
+                                <p>ETL pipelines & data quality automation (60% time savings)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="expertise-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Predictive Analytics</h4>
+                                <p>Traffic risk analysis & geospatial modeling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="education-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Education</h4>
+                        <p class="degree">B.Tech in Data Science</p>
+                        <p class="university">J D College of Engineering & Management</p>
+                        <p class="year">Expected Graduation: April 2026</p>
+                        <p class="specialization">Nagpur, Maharashtra</p>
+                    </div>
+                    
+                    <div class="certifications-card">
+                        <div class="card-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Certifications</h4>
+                        <ul class="cert-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>BCG Data Science Job Simulation (Forage)</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Business Intelligence & Analytics (NPTEL)</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Soft Skills & Personality (NPTEL)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    Production-ready machine learning systems solving real-world problems
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Malicious URL Detection -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/ec4899/ffffff?text=URL+Detection+System" alt="Malicious URL Detection">
+                        <div class="project-overlay">
+                            <a href="https://github.com/yourusername/malicious-url-detection" target="_blank" class="overlay-btn">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://your-demo.streamlit.app" target="_blank" class="overlay-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Cybersecurity</span>
+                        </div>
+                        
+                        <h3 class="project-title">Malicious URL Detection System</h3>
+                        <p class="project-description">
+                            ML-powered security tool that identifies phishing and malicious URLs in real-time
+                            using ensemble learning techniques. Achieved 95%+ accuracy with significant
+                            reduction in false positives.
+                        </p>
+                        
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">95.8%</span>
+                                <span class="metric-label">Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">↓ False Positives</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">1000+</span>
+                                <span class="metric-label">URLs/second</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                            <span class="tech-badge">XGBoost</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Data Quality Framework -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/3b82f6/ffffff?text=Data+Quality+Framework" alt="Data Quality Framework">
+                        <div class="project-overlay">
+                            <a href="https://github.com/yourusername/data-quality-framework" target="_blank" class="overlay-btn">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://your-demo.streamlit.app" target="_blank" class="overlay-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Data Engineering</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        
+                        <h3 class="project-title">Automated Data Quality Audit Framework</h3>
+                        <p class="project-description">
+                            Comprehensive data profiling system that analyzes datasets across 6 quality dimensions,
+                            providing actionable insights and automated validation checks for data teams.
+                        </p>
+                        
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">80%</span>
+                                <span class="metric-label">↓ QA Time</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">15+</span>
+                                <span class="metric-label">Auto Checks</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">6</span>
+                                <span class="metric-label">Quality Metrics</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">Great Expectations</span>
+                            <span class="tech-badge">Plotly</span>
+                            <span class="tech-badge">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Languages & Core -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages & Core</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">R</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Machine Learning -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Machine Learning & AI</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Scikit-learn</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TensorFlow</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PyTorch</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">XGBoost</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Processing -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Processing</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Pandas</span>
+                                <span class="skill-percent">93%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">NumPy</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PySpark</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visualization -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Visualization & BI</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Matplotlib</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Plotly</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Tableau</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Power BI</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    I'm actively seeking entry-level Data Scientist positions. Let's connect!
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out through any of these channels:</p>
+                    
+                    <div class="contact-methods">
+                        <a href="/cdn-cgi/l/email-protection#95ecfae0e7bbf0f8f4fcf9d5f0edf4f8e5f9f0bbf6faf8" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <p><span class="__cf_email__" data-cfemail="dba2b4aea9f5beb6bab2b79bbea3bab6abb7bef5b8b4b6">[email&#160;protected]</span></p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/yourprofile</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/yourusername" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>GitHub</h4>
+                                <p>github.com/yourusername</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://kaggle.com/yourprofile" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-kaggle"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Kaggle</h4>
+                                <p>kaggle.com/yourprofile</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="interests">
+                        <h4>Interested In</h4>
+                        <div class="interest-tags">
+                            <span class="interest-tag">Fintech</span>
+                            <span class="interest-tag">Cybersecurity</span>
+                            <span class="interest-tag">Healthcare</span>
+                            <span class="interest-tag">E-commerce</span>
+                            <span class="interest-tag">Product Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2026 Your Name. Built with passion for data science.</p>
+                </div>
+                
+                <div class="footer-right">
+                    <a href="https://github.com/yourusername" target="_blank" class="footer-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="footer-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://kaggle.com/yourprofile" target="_blank" class="footer-link">
+                        <i class="fab fa-kaggle"></i>
+                    </a>
+                    <a href="/cdn-cgi/l/email-protection#0c7563797e2269616d65604c69746d617c6069226f636
